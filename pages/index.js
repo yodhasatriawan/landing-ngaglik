@@ -6,7 +6,6 @@ import TiktokIcon from '@/components/svgs/tiktok'
 import YoutubeIcon from '@/components/svgs/youtube'
 import TaskIcon from '@/components/svgs/task'
 import BookIcon from '@/components/svgs/book'
-import Background from '@/components/svgs/background'
 
 const menus = [
   { href: '/', text: 'home' },
@@ -84,7 +83,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="px-4 py-12 md:px-12 xl:px-24 bg-no-repeat bg-right custom-bg">
+      <main className="px-4 py-12 md:px-12 xl:px-24 ">
+        {/* bg-no-repeat bg-right custom-bg */}
         {/* Hero */}
         <section className="mt-[58px] mx-auto space-y-8 lg:py-12 xl:flex xl:justify-between">
           {/* Title */}
@@ -99,7 +99,6 @@ export default function Home() {
               <span>an application</span>
             </h3>
           </div>
-
           {/* Description */}
           <div className="xl:flex xl:items-end space-y-8">
             <div className="xl:flex xl:flex-col space-y-8">
@@ -122,6 +121,36 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* It's me */}
+        <section>
+          <div className="">
+            <div className="flex justify-between items-center">
+              <h3 className="flex flex-col font-light text-[34px] py-9 leading-[120%]">
+                <span>It's me</span>
+                <span>Rajendra Yodha</span>
+              </h3>
+              <img
+                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+                className="w-14 h-14 md:w-10 md:h-10 object-cover rounded-full"
+              />
+              <div className="bg-no-repeat bg-right radar"></div>
+            </div>
+
+            <h4 className="space-y-8">
+              <p>
+                I like to code and keep it simple, try something new, and learn
+                more. I think sharing knowledge is the best practice to improve
+                my skills, and I try to do it.
+              </p>
+              <p>
+                I am currently the Chief Technology Officer at
+                <span className="text-brand"> NGAGLIK</span>, a startup to help
+                myself to improve.
+              </p>
+            </h4>
           </div>
         </section>
       </main>

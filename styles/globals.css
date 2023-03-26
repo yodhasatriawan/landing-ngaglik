@@ -11,3 +11,7 @@ body {
 .custom-bg {
   background-image: url('../components/svgs/background.svg');
 }
+
+.radar {
+  background-image: url('../components/svgs/radar.svg');
+}
