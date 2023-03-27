@@ -6,6 +6,7 @@ import TiktokIcon from '@/components/svgs/tiktok'
 import YoutubeIcon from '@/components/svgs/youtube'
 import TaskIcon from '@/components/svgs/task'
 import BookIcon from '@/components/svgs/book'
+import Radar from '@/components/svgs/radar'
 
 const menus = [
   { href: '/', text: 'home' },
@@ -83,7 +84,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="px-4 py-12 md:px-12 xl:px-24 ">
+      <main className="relative px-4 py-12 md:px-12 xl:px-24 ">
         {/* bg-no-repeat bg-right custom-bg */}
         {/* Hero */}
         <section className="mt-[58px] mx-auto space-y-8 lg:py-12 xl:flex xl:justify-between">
@@ -127,16 +128,16 @@ export default function Home() {
         {/* It's me */}
         <section>
           <div className="">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-row justify-between items-center w-full">
               <h3 className="flex flex-col font-light text-[34px] py-9 leading-[120%]">
                 <span>It's me</span>
                 <span>Rajendra Yodha</span>
               </h3>
               <img
                 src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
-                className="w-14 h-14 md:w-10 md:h-10 object-cover rounded-full"
+                className="justify-self-end h-14 w-14 object-cover rounded-full md:relative md:ml-6"
               />
-              <div className="bg-no-repeat bg-right radar"></div>
+              <Radar className="z-[-99] absolute right-0" />
             </div>
 
             <h4 className="space-y-8">
