@@ -11,8 +11,7 @@ import Navbar from '@/components/pages/Navbar'
 import Hero from '@/components/pages/Hero'
 import Desc from '@/components/pages/Desc'
 import Testimonials from '@/components/pages/Testimonials'
-
-
+import Footer from '@/components/pages/Footer'
 
 export default function Home() {
   return (
@@ -23,24 +22,24 @@ export default function Home() {
         {/* Hero */}
         <section className="mt-[58px] mx-auto space-y-8 lg:py-12 xl:flex xl:justify-between">
           {/* Title */}
-          <Hero/>
+          <Hero />
         </section>
         {/* Portfolio Cards */}
         <section>
-          <Card/>
-        </section>
-          <div className='flex flex-auto justify-center'>
+          <Card />
+          {/* <div className="flex justify-center">
             <button className="py-3 px-6 text-sm leading-[160%] border border-brand rounded-full">
-                    Load More
+              Load More
             </button>
-          </div>
+          </div> */}
+        </section>
         {/* It's me */}
+        <section className="space-y-24">
+          <Desc />
+          <Testimonials />
+        </section>
         <section>
-          <Desc/>
-        </section> 
-        {/*Testimonial*/}
-        <section>
-          <Testimonials/>
+          <Footer />
         </section>
       </main>
     </>
